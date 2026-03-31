@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dev Kanban - M2M Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; padding: 20px; color: #333; }
+        h1 { margin-bottom: 20px; text-align: center; color: #2c3e50; }
+        .board { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; align-items: flex-start; }
+        .column { background-color: #ebedef; border-radius: 8px; min-width: 280px; width: 280px; display: flex; flex-direction: column; max-height: 85vh; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .column-header { padding: 15px; font-weight: bold; font-size: 1.1rem; border-bottom: 2px solid rgba(0,0,0,0.05); text-transform: uppercase; letter-spacing: 1px; color: #555; }
+        
+        #col-backlog .column-header { border-top: 5px solid #95a5a6; }
+        #col-sprint .column-header { border-top: 5px solid #3498db; }
+        #col-inprogress .column-header { border-top: 5px solid #f1c40f; }
+        #col-review .column-header { border-top: 5px solid #e67e22; }
+        #col-blocked .column-header { border-top: 5px solid #e74c3c; }
+        #col-done .column-header { border-top: 5px solid #2ecc71; }
+
+        .cards { padding: 10px; flex-grow: 1; overflow-y: auto; min-height: 100px; }
+        .card { background-color: #fff; border-radius: 6px; padding: 15px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #ccc; font-weight: 500; font-size: 0.95rem; }
+        
+        .card-initialized-project-structure { border-left-color: #34495e; }
+        .card-define-data-models { border-left-color: #8e44ad; }
+        .card-implement-backend { border-left-color: #16a085; }
+        .card-event-setup { border-left-color: #d35400; }
+        .card-team-management { border-left-color: #2980b9; }
+
+        .empty-msg { color: #999; font-style: italic; font-size: 0.8rem; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>AI Development Kanban</h1>
+    <div class="board">
+        <!-- Backlog -->
+        <div class="column" id="col-backlog">
+            <div class="column-header">Backlog</div>
+            <div class="cards" id="cards-backlog">
+                <div class="empty-msg">No stories in backlog</div>
+            </div>
+        </div>
+
+        <!-- Sprint -->
+        <div class="column" id="col-sprint">
+            <div class="column-header">Sprint</div>
+            <div class="cards" id="cards-sprint">
+                <div class="empty-msg">Ready to pull tasks...</div>
+            </div>
+        </div>
+
+        <!-- In Progress -->
+        <div class="column" id="col-inprogress">
+            <div class="column-header">In Progress</div>
+            <div class="cards" id="cards-inprogress">
+                <div class="empty-msg">No stories in progress</div>
+            </div>
+        </div>
+
+        <!-- Review -->
+        <div class="column" id="col-review">
+            <div class="column-header">Review</div>
+            <div class="cards" id="cards-review">
+                <div class="card card-team-management">Create team management page</div>
+            </div>
+        </div>
+
+        <!-- Blocked -->
+        <div class="column" id="col-blocked">
+            <div class="column-header">Blocked</div>
+            <div class="cards" id="cards-blocked">
+                <div class="empty-msg">No blockers</div>
+            </div>
+        </div>
+
+        <!-- Done -->
+        <div class="column" id="col-done">
+            <div class="column-header">Done</div>
+            <div class="cards" id="cards-done">
+                <div class="card card-initialized-project-structure">Initialize project structure</div>
+                <div class="card card-define-data-models">Define data models</div>
+                <div class="card card-implement-backend">Implement basic backend server</div>
+                <div class="card card-event-setup">Create event setup page</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

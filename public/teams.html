@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Management - M2M Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-list { margin-top: 30px; }
+        .team-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+        .team-item:last-child { border-bottom: none; }
+        .btn-delete { background-color: #e74c3c; color: #fff; padding: 5px 10px; font-size: 0.8rem; }
+        .btn-delete:hover { background-color: #c0392b; }
+        .btn-edit { background-color: #f3c40f; color: #333; padding: 5px 10px; font-size: 0.8rem; margin-right: 5px; }
+        .btn-edit:hover { background-color: #d4ac0d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Team Management</h1>
+            <nav>
+                <a href="setup.html">Event Setup</a> | 
+                <a href="kanban.html">AI Kanban</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="form-container">
+                <form id="team-form">
+                    <input type="hidden" id="team-id" name="id">
+                    <div class="form-group">
+                        <label for="name">Team Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter team name" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" id="submit-btn" class="btn btn-primary">Add Team</button>
+                        <button type="button" id="cancel-edit" class="btn" style="display: none; width: 100%; margin-top: 10px;">Cancel Edit</button>
+                    </div>
+                </form>
+                <div id="message" class="message"></div>
+            </section>
+
+            <section class="team-list">
+                <h2>Current Teams</h2>
+                <div id="teams-container">
+                    <p class="empty-msg">No teams added yet.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/teams.js"></script>
+</body>
+</html>

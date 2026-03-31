@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Setup - M2M Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Setup</h1>
+            <nav>
+                <a href="kanban.html">AI Kanban</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="form-container">
+                <form id="setup-form">
+                    <div class="form-group">
+                        <label for="start_datetime">Start Date & Time</label>
+                        <input type="datetime-local" id="start_datetime" name="start_datetime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="end_datetime">End Date & Time</label>
+                        <input type="datetime-local" id="end_datetime" name="end_datetime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin_password">Admin Password</label>
+                        <input type="password" id="admin_password" name="admin_password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="current_testing_rate">Testing Rate (Core Coin per minute)</label>
+                        <input type="number" id="current_testing_rate" name="current_testing_rate" value="250" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Event Status</label>
+                        <select id="status" name="status">
+                            <option value="upcoming">Upcoming</option>
+                            <option value="live">Live</option>
+                            <option value="ended">Ended</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Configuration</button>
+                    </div>
+                </form>
+                <div id="message" class="message"></div>
+            </section>
+        </main>
+    </div>
+    <script src="js/setup.js"></script>
+</body>
+</html>

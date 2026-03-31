@@ -1,0 +1,123 @@
+[
+  {
+    "id": "d19e7117",
+    "title": "Initialize project structure and Kanban board",
+    "status": "completed",
+    "createdAt": "2026-03-31T12:27:00.889Z",
+    "updatedAt": "2026-03-31T12:28:20.638Z",
+    "completedAt": "2026-03-31T12:28:20.638Z"
+  },
+  {
+    "id": "3f103cab",
+    "title": "Define data models (Story 2)",
+    "status": "completed",
+    "createdAt": "2026-03-31T12:27:00.889Z",
+    "updatedAt": "2026-03-31T12:32:39.838Z",
+    "completedAt": "2026-03-31T12:32:39.838Z"
+  },
+  {
+    "id": "f96c6827",
+    "title": "Implement basic backend server (Story 3)",
+    "status": "completed",
+    "createdAt": "2026-03-31T12:27:00.889Z",
+    "updatedAt": "2026-03-31T12:34:39.489Z",
+    "completedAt": "2026-03-31T12:34:39.489Z"
+  },
+  {
+    "id": "aef0e937",
+    "title": "Create event setup page (Story 4)",
+    "status": "completed",
+    "createdAt": "2026-03-31T12:27:00.889Z",
+    "updatedAt": "2026-03-31T13:46:14.577Z",
+    "completedAt": "2026-03-31T13:46:14.577Z"
+  },
+  {
+    "id": "d2ab397e",
+    "title": "Create team management page (Story 5)",
+    "status": "completed",
+    "createdAt": "2026-03-31T12:27:00.889Z",
+    "updatedAt": "2026-03-31T13:51:25.055Z",
+    "completedAt": "2026-03-31T13:51:25.055Z"
+  },
+  {
+    "id": "c4fa70f5",
+    "title": "Implement API to save event configuration",
+    "description": "Add a POST endpoint for /api/event and ensure it handles validation and saving to data/event.json.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:44:15.117Z",
+    "updatedAt": "2026-03-31T13:45:05.333Z",
+    "completedAt": "2026-03-31T13:45:05.333Z"
+  },
+  {
+    "id": "f8673aa8",
+    "title": "Develop setup page frontend UI",
+    "description": "Create setup.html in the public directory with a form for event settings.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:44:15.117Z",
+    "updatedAt": "2026-03-31T13:46:14.577Z",
+    "completedAt": "2026-03-31T13:46:14.577Z"
+  },
+  {
+    "id": "ec70664c",
+    "title": "Implement setup page logic (JS)",
+    "description": "Add JavaScript to fetch existing event data and handle form submission to the new API endpoint.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:44:15.117Z",
+    "updatedAt": "2026-03-31T13:46:14.577Z",
+    "completedAt": "2026-03-31T13:46:14.577Z"
+  },
+  {
+    "id": "f3c790b3",
+    "title": "Style the setup page",
+    "description": "Add CSS to make the setup page look professional and user-friendly.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:44:15.117Z",
+    "updatedAt": "2026-03-31T13:46:14.577Z",
+    "completedAt": "2026-03-31T13:46:14.577Z"
+  },
+  {
+    "id": "6b2c3373",
+    "title": "Update Kanban board status",
+    "description": "Move 'Implement basic backend server' to Done and 'Create event setup page' to In Progress.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:44:15.117Z",
+    "updatedAt": "2026-03-31T13:44:47.592Z",
+    "completedAt": "2026-03-31T13:44:47.592Z"
+  },
+  {
+    "id": "d69d463e",
+    "title": "Implement API for team management",
+    "description": "Add POST and DELETE endpoints for /api/teams to handle adding and removing teams.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:49:51.562Z",
+    "updatedAt": "2026-03-31T13:51:25.055Z",
+    "completedAt": "2026-03-31T13:51:25.055Z"
+  },
+  {
+    "id": "b40e4adc",
+    "title": "Develop team management frontend UI",
+    "description": "Create teams.html in the public directory with a list and form for managing teams.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:49:51.562Z",
+    "updatedAt": "2026-03-31T13:51:25.055Z",
+    "completedAt": "2026-03-31T13:51:25.055Z"
+  },
+  {
+    "id": "2a2cfd74",
+    "title": "Implement team management logic (JS)",
+    "description": "Add JavaScript to fetch teams, handle additions, and deletions.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:49:51.562Z",
+    "updatedAt": "2026-03-31T13:51:25.055Z",
+    "completedAt": "2026-03-31T13:51:25.055Z"
+  },
+  {
+    "id": "72203b4c",
+    "title": "Update Kanban for Team Management Story",
+    "description": "Update kanban.html to reflect the progress of Story 5.",
+    "status": "completed",
+    "createdAt": "2026-03-31T13:49:51.562Z",
+    "updatedAt": "2026-03-31T13:51:25.055Z",
+    "completedAt": "2026-03-31T13:51:25.055Z"
+  }
+]

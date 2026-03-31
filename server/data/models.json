@@ -1,0 +1,41 @@
+{
+  "event": {
+    "id": "string",
+    "start_datetime": "ISO8601 string",
+    "end_datetime": "ISO8601 string",
+    "admin_password": "string",
+    "current_testing_rate": "number",
+    "status": "string (active, ended, setup)"
+  },
+  "team": {
+    "id": "string",
+    "name": "string"
+  },
+  "story": {
+    "id": "string",
+    "number": "number",
+    "title": "string",
+    "description": "string",
+    "reward": "number",
+    "category": "string"
+  },
+  "storyCompletion": {
+    "id": "string",
+    "team_id": "string",
+    "story_id": "string",
+    "completed_at": "ISO8601 string",
+    "reward_at_time": "number",
+    "reversed": "boolean"
+  },
+  "ledgerEntry": {
+    "id": "string",
+    "team_id": "string",
+    "created_at": "ISO8601 string",
+    "type": "string (testing, bonus, fine, correction)",
+    "amount": "number",
+    "minutes_used": "number (optional)",
+    "rate_used": "number (optional)",
+    "note": "string",
+    "reversed": "boolean"
+  }
+}
